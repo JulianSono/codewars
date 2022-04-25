@@ -1,3 +1,4 @@
 # codewars
 
-- Strulling with daily codewars challenges
+- Strugling with daily codewars challenges
+-
