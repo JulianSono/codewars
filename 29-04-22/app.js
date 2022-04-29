@@ -21,9 +21,11 @@ function sumFromString(str){
   //Regex pattern to extract all numbers
 var numberPattern = /\d+/g;
   
+  var strToNumber= str.match(numberPattern)
+  
   //match number pattern with string. Run map method to conver each item to a number. 
   // Reduce method will add together all number fund.
-  return str.match(numberPattern).map(e=> parseInt(e)).reduce((a,b)=> a+b)
+  return strToNumber !=null ? strToNumber.map(e=> parseInt(e)).reduce((a,b)=> parseInt(a+b)) : 0
 }
 
 sumFromString("In 2015, I want to know how much does iPhone 6+ cost? 4-4 1.5")
