@@ -36,8 +36,12 @@ You should return this output:
 */
 
 
+
 function sortReindeer(reindeerNames) {
+  
+  //sort paramenter
   return reindeerNames.sort((a, b) => 
+     //Take names and split it into firstname and lastname. Return "a.split(' ')[1]" if greater than " b.split(' ')[1] "
     a.split(' ')[1] > b.split(' ')[1] ? 1 :
     a.split(' ')[1] < b.split(' ')[1] ? -1 : 0
   )
