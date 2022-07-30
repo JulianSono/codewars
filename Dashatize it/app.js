@@ -13,7 +13,11 @@ dashatize(6815) -> '68-1-5
 */
 function dashatize(num) {
   return String(num)
+  //find even numbers and add "-" on each side
     .replace(/([13579])/g, "-$1-")
+  
+  //find consecutive "-" and keep one
     .replace(/--+/g, "-")
+  //remove"-" from begining and end
     .replace(/(^-|-$)/g, "")
 }
