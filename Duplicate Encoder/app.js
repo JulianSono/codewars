@@ -12,7 +12,6 @@ Assertion messages may be unclear about what they display in some languages. If 
 function duplicateEncode(word){
 
     let res  = word.toLowerCase().split("")
-    let b =word.split("")
 
 
     // /If they both are same, means the element occurs only once in the array but if they are different, it clearly means that the element occurs more than once as the same element can not have 2 different indexes.
